@@ -3,6 +3,8 @@
 import Inferno from 'inferno';
 import Component from 'inferno-component';
 import ApiService from './utils/ApiService';
+import Loading from './components/Loading/Loading';
+import DinoList from './components/DinoList/DinoList';
 import './App.css';
 
 class App extends Component {
@@ -30,20 +32,15 @@ class App extends Component {
       <div className="App">
         <header className="App-header bg-primary clearfix">
           <h1 className="text-center">Dinosaurs</h1>
+          <img src="http://www.zaperoco.xyz/content/uploads/avatars/T-Rex-Malos-chistes-3-758x758.jpg" />
         </header>
         <div className="App-content container-fluid">
           <div className="row">
             {
               state.dinos ? (
-                <ul>
-                  {
-                    state.dinos.map((dino) => (
-                      <li key={dino.id}>{dino.name}</li>
-                    ))
-                  }
-                </ul>
+                <DinoList dinos={state.dinos} />
               ) : (
-                <p>Loading...</p>
+                <Loading error={state.error} />
               )
             }
           </div>

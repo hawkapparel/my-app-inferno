@@ -1,13 +1,28 @@
 /* src/App.css */
 
 .App-header {
-  margin-bottom: 20px;
+	text-align: center;
+	background-color: #337ab7;
+	border-bottom: 5px solid #91ccff;
+	margin-bottom: 40px;
 }
 .App-header h1 {
-  margin: 0;
-  padding: 20px 0;
+	margin: 0;
+	padding: 20px 0;
+	display: inline-block;
+	margin-right: 12px;
+	vertical-align: middle;
 }
+.App-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    display: inline-block;
+	vertical-align: middle;
+	margin: 10px 0;
+}
+
 .App-content {
-  margin: 0 auto;
-  max-width: 1000px;
+	margin: 0 auto;
+	max-width: 1000px;
 }

@@ -1,0 +1,33 @@
+.list-group-item {
+	border: solid 1px #000;
+	border-bottom-width: 0;
+}
+.list-group-item {
+	border-bottom: solid 1px #000;
+}
+
+.list-group-item > h4 {
+	padding: 12px;
+	font-size: 16px;
+	background-color: #CCC;
+    margin: 0;
+}
+.list-group-item > .body {
+    height: 0;
+    padding: 0 10px;
+    overflow-y: hidden;
+    transition: height .5s;
+    transition: height .5s, padding-top .5s, padding-bottom .5s;
+}
+.list-group-item-heading.selected + .body {
+    height: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: 1px solid #D4D4D4;
+	border-top: none;
+	background-color: #ebf2f6;
+}
+
+.list-group-item-heading.selected{
+	background-color: rgb(99, 163, 218);
+}

@@ -22,7 +22,8 @@ app.use(cors());
 //----- GET Routes
 
 app.get('/api/dinosaurs', function(req, res) {
-	res.json(allDinos);
+	setTimeout(function(){ res.json(allDinos); }, 3000);
+	
 });
 
 app.get('/api/dinosaur/:id', function(req,res) {

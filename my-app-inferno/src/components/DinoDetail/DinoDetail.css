@@ -1,0 +1,29 @@
+/* src/components/DinoDetail/DinoDetail.css */
+
+.DinoDetail{
+	background-color: #FBFBFB;
+}
+
+.DinoDetail a {
+  cursor: pointer;
+}
+
+.DinoDetail .list-group-item{
+	border: none;
+	padding: 10px 0px;
+}
+
+.DinoDetail .list-group-item-info{
+	background-color: transparent;
+}
+
+.DinoDetail .list-group-item-img-container {
+  text-align: center;
+}
+
+.DinoDetail .list-group-item-img-container img{
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+	border: 3px solid rgb(51, 122, 183);
+}
